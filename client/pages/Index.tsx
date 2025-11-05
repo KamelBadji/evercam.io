@@ -28,7 +28,7 @@ export default function Index() {
           <p className="text-base md:text-xl text-white/90 mb-4">
             Construction Reality Capture & Intelligence
           </p>
-          <h1 className="text-4xl md:text-7xl font-normal text-white leading-tight md:leading-[90px] mb-6 md:mb-8">
+          <h1 className="text-4xl md:text-7xl font-normal text-white leading-tight md:leading-[48px] mb-6 md:mb-8">
             <div className="text-[64px]">Complete Visibility.</div>
             <br className="inline" />
             <div className="text-[64px]">Built for Construction.</div>
