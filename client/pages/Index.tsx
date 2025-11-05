@@ -20,7 +20,9 @@ export default function Index() {
             Construction Reality Capture & Intelligence
           </p>
           <h1 className="text-4xl md:text-7xl font-normal text-white leading-tight md:leading-[90px] mb-6 md:mb-8">
-            Complete Visibility.<br />Built for Construction.
+            <div className="text-[64px]">Complete Visibility.</div>
+            <br className="inline" />
+            <div className="text-[64px]">Built for Construction.</div>
           </h1>
           <p className="text-lg md:text-2xl text-white/90 leading-relaxed md:leading-[39px] mb-8 md:mb-12">
             Fixed cameras, drone, and 360 capture to increase safety and productivity on your job sites.
