@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-900/10 bg-white/95 backdrop-blur">
-      <div className="mx-auto max-w-[1216px] px-8 lg:px-14">
+      <div className="mx-auto max-w-[1216px] px-6 md:px-8 lg:px-14">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
@@ -28,7 +28,7 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="text-sm font-medium">
+            <Button variant="ghost" size="sm" className="hidden md:flex text-sm font-medium">
               Sign In
             </Button>
             <Button
@@ -36,6 +36,9 @@ export default function Header() {
               className="bg-[#C4161C] hover:bg-[#C4161C]/90 text-white text-sm font-medium"
             >
               Book a Demo
+            </Button>
+            <Button variant="ghost" size="sm" className="lg:hidden">
+              <Menu className="w-5 h-5" />
             </Button>
           </div>
         </div>
