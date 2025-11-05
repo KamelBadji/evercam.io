@@ -28,7 +28,11 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="hidden md:flex text-sm font-medium">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="hidden md:flex text-sm font-medium"
+            >
               Sign In
             </Button>
             <Button

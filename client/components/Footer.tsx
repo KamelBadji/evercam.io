@@ -33,7 +33,9 @@ export default function Footer() {
 
           {/* Solutions */}
           <div>
-            <h3 className="text-sm font-normal text-white/90 mb-4">Solutions</h3>
+            <h3 className="text-sm font-normal text-white/90 mb-4">
+              Solutions
+            </h3>
             <ul className="space-y-2">
               <FooterLink href="#">Risk Mitigation</FooterLink>
               <FooterLink href="#">Safety & Compliance</FooterLink>
@@ -44,7 +46,9 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="text-sm font-normal text-white/90 mb-4">Resources</h3>
+            <h3 className="text-sm font-normal text-white/90 mb-4">
+              Resources
+            </h3>
             <ul className="space-y-2">
               <FooterLink href="#">Case Studies</FooterLink>
               <FooterLink href="#">Blog</FooterLink>
@@ -72,13 +76,22 @@ export default function Footer() {
               © 2025 Evercam. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
-              <Link to="#" className="text-sm text-white/70 hover:text-white transition-colors">
+              <Link
+                to="#"
+                className="text-sm text-white/70 hover:text-white transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link to="#" className="text-sm text-white/70 hover:text-white transition-colors">
+              <Link
+                to="#"
+                className="text-sm text-white/70 hover:text-white transition-colors"
+              >
                 Terms of Service
               </Link>
-              <Link to="#" className="text-sm text-white/70 hover:text-white transition-colors">
+              <Link
+                to="#"
+                className="text-sm text-white/70 hover:text-white transition-colors"
+              >
                 Cookie Policy
               </Link>
             </div>
@@ -89,7 +102,13 @@ export default function Footer() {
   );
 }
 
-function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+function FooterLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
     <li>
       <Link
