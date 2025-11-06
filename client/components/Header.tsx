@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { ChevronDown, Menu } from "lucide-react";
+import { useState } from "react";
+import ProductsMegaMenu from "./ProductsMegaMenu";
 
 export default function Header() {
+  const [showProductsMenu, setShowProductsMenu] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-900/10 bg-white/95 backdrop-blur">
       <div className="mx-auto max-w-[1216px] px-6 md:px-8 lg:px-14">
@@ -14,7 +18,14 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
-            <NavButton>Products</NavButton>
+            <div 
+              className="relative"
+              onMouseEnter={() => setShowProductsMenu(true)}
+              onMouseLeave={() => setShowProductsMenu(false)}
+            >
+              <NavButton>Products</NavButton>
+              {showProductsMenu && <ProductsMegaMenu />}
+            </div>
             <NavButton>Solutions</NavButton>
             <NavButton>Resources</NavButton>
             <NavButton>Company</NavButton>
