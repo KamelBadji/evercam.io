@@ -18,8 +18,7 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
-            <div 
-              className="relative"
+            <div
               onMouseEnter={() => setShowProductsMenu(true)}
               onMouseLeave={() => setShowProductsMenu(false)}
             >
