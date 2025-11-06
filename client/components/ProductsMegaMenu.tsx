@@ -1,5 +1,26 @@
 import { Link } from "react-router-dom";
-import { Video, Plane, Maximize, Film, Eye, PlayCircle, Calendar, Clock, Folder, Layers, Box, Monitor, Users, MessageSquare, BarChart3, Zap, Cloud, Shield, Cpu, Search } from "lucide-react";
+import {
+  Video,
+  Plane,
+  Maximize,
+  Film,
+  Eye,
+  PlayCircle,
+  Calendar,
+  Clock,
+  Folder,
+  Layers,
+  Box,
+  Monitor,
+  Users,
+  MessageSquare,
+  BarChart3,
+  Zap,
+  Cloud,
+  Shield,
+  Cpu,
+  Search,
+} from "lucide-react";
 
 interface MenuItemProps {
   icon: React.ReactNode;
@@ -10,14 +31,21 @@ interface MenuItemProps {
   isHighlight?: boolean;
 }
 
-function MenuItem({ icon, title, description, href, isNew, isHighlight }: MenuItemProps) {
+function MenuItem({
+  icon,
+  title,
+  description,
+  href,
+  isNew,
+  isHighlight,
+}: MenuItemProps) {
   return (
     <Link
       to={href}
       className={`group flex items-start gap-3 p-3 rounded-lg transition-colors ${
-        isHighlight 
-          ? 'bg-[#C4161C]/5 border border-[#C4161C]/20 hover:bg-[#C4161C]/10' 
-          : 'hover:bg-slate-50'
+        isHighlight
+          ? "bg-[#C4161C]/5 border border-[#C4161C]/20 hover:bg-[#C4161C]/10"
+          : "hover:bg-slate-50"
       }`}
     >
       <div className="w-5 h-5 mt-0.5 text-[#C4161C]/70 flex-shrink-0">
@@ -51,9 +79,7 @@ function Section({ title, subtitle, children }: SectionProps) {
         <h2 className="text-sm font-semibold text-slate-900 mb-1">{title}</h2>
         <p className="text-xs text-slate-500">{subtitle}</p>
       </div>
-      <div className="flex flex-col gap-1">
-        {children}
-      </div>
+      <div className="flex flex-col gap-1">{children}</div>
     </div>
   );
 }
@@ -66,8 +92,8 @@ export default function ProductsMegaMenu() {
           {/* Main Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
             {/* Column 1: Capture Technologies */}
-            <Section 
-              title="Capture Technologies" 
+            <Section
+              title="Capture Technologies"
               subtitle="Hardware & data input methods"
             >
               <MenuItem
@@ -91,8 +117,8 @@ export default function ProductsMegaMenu() {
             </Section>
 
             {/* Column 2: Platform Features */}
-            <Section 
-              title="Platform Features" 
+            <Section
+              title="Platform Features"
               subtitle="Tools & collaboration workspace"
             >
               <MenuItem
@@ -168,8 +194,8 @@ export default function ProductsMegaMenu() {
             </div>
 
             {/* Column 4: AI & Intelligence */}
-            <Section 
-              title="AI & Intelligence" 
+            <Section
+              title="AI & Intelligence"
               subtitle="Smart insights and automation"
             >
               <MenuItem
@@ -219,8 +245,12 @@ export default function ProductsMegaMenu() {
           <div className="border-t border-slate-900/10 bg-slate-50/50 px-8 py-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-slate-900 mb-0.5">Ready to see more?</p>
-                <p className="text-xs text-slate-500">Schedule a personalized demo</p>
+                <p className="text-sm text-slate-900 mb-0.5">
+                  Ready to see more?
+                </p>
+                <p className="text-xs text-slate-500">
+                  Schedule a personalized demo
+                </p>
               </div>
               <Link
                 to="#"
